@@ -1,0 +1,96 @@
+/* SecureJSON Demo Styles */
+
+.demo-section {
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  border: 1px solid #374151;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3);
+}
+
+.terminal-window {
+  background: #000000;
+  border: 1px solid #374151;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+  font-family: 'Fira Code', 'Monaco', 'Consolas', monospace;
+}
+
+.terminal-header {
+  background: #1f2937;
+  margin: -1rem -1rem 1rem -1rem;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #374151;
+}
+
+.terminal-content {
+  line-height: 1.6;
+}
+
+.demo-step {
+  border-left: 3px solid #10b981;
+  padding-left: 1rem;
+  margin-left: 0.5rem;
+}
+
+.sample-files .bg-gray-800 {
+  transition: all 0.2s ease;
+  border: 1px solid transparent;
+}
+
+.sample-files .bg-gray-800:hover {
+  border-color: #10b981;
+  transform: translateY(-2px);
+}
+
+.quick-start code {
+  transition: all 0.2s ease;
+  border: 1px solid transparent;
+}
+
+.quick-start code:hover {
+  border-color: #10b981;
+  background-color: #1f2937;
+}
+
+.features-highlight > div {
+  transition: all 0.2s ease;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid transparent;
+}
+
+.features-highlight > div:hover {
+  border-color: #10b981;
+  background-color: rgba(16, 185, 129, 0.05);
+}
+
+/* Copy button for code blocks */
+.copy-btn {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  background: #374151;
+  color: #9ca3af;
+  border: none;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  font-size: 0.75rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.copy-btn:hover {
+  background: #10b981;
+  color: white;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .terminal-window {
+    font-size: 0.875rem;
+    padding: 0.75rem;
+  }
+  
+  .demo-step {
+    margin-left: 0;
+    padding-left: 0.75rem;
+  }
+}

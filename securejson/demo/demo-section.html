@@ -1,0 +1,138 @@
+<!-- SecureJSON Demo Section for seclayer.io/securejson -->
+<section class="demo-section bg-gray-900 rounded-xl p-8 my-12">
+  <div class="max-w-6xl mx-auto">
+    <h2 class="text-3xl font-bold text-green-400 mb-8 text-center">
+      🧪 Try SecureJSON Live
+    </h2>
+    
+    <!-- Step 1: Generate Keys -->
+    <div class="demo-step mb-8">
+      <h3 class="text-xl font-semibold text-white mb-4">Step 1: Generate Key Pair</h3>
+      <div class="terminal-window bg-black rounded-lg p-4 font-mono text-sm">
+        <div class="terminal-header flex items-center mb-3">
+          <div class="flex space-x-2">
+            <div class="w-3 h-3 bg-red-500 rounded-full"></div>
+            <div class="w-3 h-3 bg-yellow-500 rounded-full"></div>
+            <div class="w-3 h-3 bg-green-500 rounded-full"></div>
+          </div>
+          <span class="text-gray-400 ml-4">Terminal</span>
+        </div>
+        <div class="terminal-content">
+          <div class="text-green-400">$ securejson generate-key --algo es256 --prefix demo</div>
+          <div class="text-gray-300">🔑 Generating ES256 key pair...</div>
+          <div class="text-green-400">✅ Private key saved to: demo-private.pem</div>
+          <div class="text-green-400">✅ Public key saved to: demo-public.pem</div>
+          <div class="text-blue-400">🔐 Algorithm: ES256</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Step 2: Sign Data -->
+    <div class="demo-step mb-8">
+      <h3 class="text-xl font-semibold text-white mb-4">Step 2: Sign Your Data</h3>
+      <div class="terminal-window bg-black rounded-lg p-4 font-mono text-sm">
+        <div class="terminal-header flex items-center mb-3">
+          <div class="flex space-x-2">
+            <div class="w-3 h-3 bg-red-500 rounded-full"></div>
+            <div class="w-3 h-3 bg-yellow-500 rounded-full"></div>
+            <div class="w-3 h-3 bg-green-500 rounded-full"></div>
+          </div>
+          <span class="text-gray-400 ml-4">Terminal</span>
+        </div>
+        <div class="terminal-content">
+          <div class="text-green-400">$ securejson sign --key demo-private.pem --file nft-metadata.json --out signed.json --algo es256</div>
+          <div class="text-gray-300">📁 Signing file...</div>
+          <div class="text-blue-400">🔐 Using algorithm: ES256</div>
+          <div class="text-green-400">✅ Signing complete!</div>
+          <div class="text-gray-300">📁 File: signed.json</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Step 3: Verify Signature -->
+    <div class="demo-step mb-8">
+      <h3 class="text-xl font-semibold text-white mb-4">Step 3: Verify Signature</h3>
+      <div class="terminal-window bg-black rounded-lg p-4 font-mono text-sm">
+        <div class="terminal-header flex items-center mb-3">
+          <div class="flex space-x-2">
+            <div class="w-3 h-3 bg-red-500 rounded-full"></div>
+            <div class="w-3 h-3 bg-yellow-500 rounded-full"></div>
+            <div class="w-3 h-3 bg-green-500 rounded-full"></div>
+          </div>
+          <span class="text-gray-400 ml-4">Terminal</span>
+        </div>
+        <div class="terminal-content">
+          <div class="text-green-400">$ securejson verify --key demo-public.pem --file signed.json</div>
+          <div class="text-gray-300">📁 Verifying file...</div>
+          <div class="text-blue-400">🔐 Using algorithm: ES256</div>
+          <div class="text-green-400">✅ Signature verified!</div>
+          <div class="text-gray-300">📦 Payload:</div>
+          <div class="text-yellow-300 ml-4">{</div>
+          <div class="text-yellow-300 ml-8">"name": "SecureJSON Demo NFT",</div>
+          <div class="text-yellow-300 ml-8">"description": "A demonstration of cryptographically signed metadata",</div>
+          <div class="text-yellow-300 ml-8">"creator": "seclayer.io"</div>
+          <div class="text-yellow-300 ml-4">}</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sample Files -->
+    <div class="sample-files mt-8">
+      <h3 class="text-xl font-semibold text-white mb-4">📁 Sample Files</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div class="bg-gray-800 rounded-lg p-4">
+          <h4 class="text-green-400 font-semibold mb-2">NFT Metadata</h4>
+          <p class="text-gray-300 text-sm mb-3">Perfect for Web3 applications</p>
+          <a href="/demo/nft-metadata.json" download class="text-blue-400 hover:text-blue-300 text-sm">Download JSON</a>
+        </div>
+        <div class="bg-gray-800 rounded-lg p-4">
+          <h4 class="text-green-400 font-semibold mb-2">MintPack Collection</h4>
+          <p class="text-gray-300 text-sm mb-3">Trading card metadata example</p>
+          <a href="/demo/mintpack.json" download class="text-blue-400 hover:text-blue-300 text-sm">Download JSON</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Quick Start -->
+    <div class="quick-start mt-8 bg-gray-800 rounded-lg p-6">
+      <h3 class="text-xl font-semibold text-white mb-4">🚀 Quick Start</h3>
+      <div class="space-y-3">
+        <div class="flex items-center space-x-3">
+          <span class="text-green-400 font-mono text-sm">1.</span>
+          <code class="bg-gray-900 px-3 py-1 rounded text-sm text-green-400">npm install -g securejson</code>
+        </div>
+        <div class="flex items-center space-x-3">
+          <span class="text-green-400 font-mono text-sm">2.</span>
+          <code class="bg-gray-900 px-3 py-1 rounded text-sm text-green-400">securejson generate-key --algo es256</code>
+        </div>
+        <div class="flex items-center space-x-3">
+          <span class="text-green-400 font-mono text-sm">3.</span>
+          <code class="bg-gray-900 px-3 py-1 rounded text-sm text-green-400">securejson sign --key key-private.pem --file data.json --out signed.json</code>
+        </div>
+        <div class="flex items-center space-x-3">
+          <span class="text-green-400 font-mono text-sm">4.</span>
+          <code class="bg-gray-900 px-3 py-1 rounded text-sm text-green-400">securejson verify --key key-public.pem --file signed.json</code>
+        </div>
+      </div>
+    </div>
+
+    <!-- Features Highlight -->
+    <div class="features-highlight mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="text-center">
+        <div class="text-3xl mb-2">🔐</div>
+        <h4 class="text-green-400 font-semibold mb-2">Cryptographic Security</h4>
+        <p class="text-gray-300 text-sm">ES256 & RS256 algorithms with tamper detection</p>
+      </div>
+      <div class="text-center">
+        <div class="text-3xl mb-2">⚡</div>
+        <h4 class="text-green-400 font-semibold mb-2">Lightning Fast</h4>
+        <p class="text-gray-300 text-sm">Sign and verify in milliseconds</p>
+      </div>
+      <div class="text-center">
+        <div class="text-3xl mb-2">🌐</div>
+        <h4 class="text-green-400 font-semibold mb-2">Web3 Ready</h4>
+        <p class="text-gray-300 text-sm">Perfect for NFTs, dApps, and metadata</p>
+      </div>
+    </div>
+  </div>
+</section>

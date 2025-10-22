@@ -1,0 +1,22 @@
+{
+  "name": "SecureJSON Demo NFT",
+  "description": "A demonstration of cryptographically signed metadata",
+  "image": "https://seclayer.io/demo/nft-image.png",
+  "attributes": [
+    {
+      "trait_type": "Security Level",
+      "value": "Maximum"
+    },
+    {
+      "trait_type": "Algorithm",
+      "value": "ES256"
+    },
+    {
+      "trait_type": "Verification",
+      "value": "Cryptographically Proven"
+    }
+  ],
+  "creator": "seclayer.io",
+  "timestamp": 1760376000,
+  "version": "1.0"
+}

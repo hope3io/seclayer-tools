@@ -1,0 +1,26 @@
+{
+  "payload": {
+    "name": "SecureJSON Demo NFT",
+    "description": "A demonstration of cryptographically signed metadata",
+    "image": "https://seclayer.io/demo/nft-image.png",
+    "attributes": [
+      {
+        "trait_type": "Security Level",
+        "value": "Maximum"
+      },
+      {
+        "trait_type": "Algorithm",
+        "value": "ES256"
+      },
+      {
+        "trait_type": "Verification",
+        "value": "Cryptographically Proven"
+      }
+    ],
+    "creator": "seclayer.io",
+    "timestamp": 1760376000,
+    "version": "1.0"
+  },
+  "signature": "eyJhbGciOiJFUzI1NiJ9.eyJwYXlsb2FkIjoie1wiYXR0cmlidXRlc1wiOlt7XCJ0cmFpdF90eXBlXCI6XCJTZWN1cml0eSBMZXZlbFwiLFwidmFsdWVcIjpcIk1heGltdW1cIn0se1widHJhaXRfdHlwZVwiOlwiQWxnb3JpdGhtXCIsXCJ2YWx1ZVwiOlwiRVMyNTZcIn0se1widHJhaXRfdHlwZVwiOlwiVmVyaWZpY2F0aW9uXCIsXCJ2YWx1ZVwiOlwiQ3J5cHRvZ3JhcGhpY2FsbHkgUHJvdmVuXCJ9XSxcImNyZWF0b3JcIjpcInNlY2xheWVyLmlvXCIsXCJkZXNjcmlwdGlvblwiOlwiQSBkZW1vbnN0cmF0aW9uIG9mIGNyeXB0b2dyYXBoaWNhbGx5IHNpZ25lZCBtZXRhZGF0YVwiLFwiaW1hZ2VcIjpcImh0dHBzOi8vc2VjbGF5ZXIuaW8vZGVtby9uZnQtaW1hZ2UucG5nXCIsXCJuYW1lXCI6XCJTZWN1cmVKU09OIERlbW8gTkZUXCIsXCJ0aW1lc3RhbXBcIjoxNzYwMzc2MDAwLFwidmVyc2lvblwiOlwiMS4wXCJ9IiwiaWF0IjoxNzYwMzc2NzY1LCJqdGkiOiJzZWN1cmVqc29uIn0.9cx1kEbAy8X-kfkE7giswfkDBFmOlfxbn0lcmnK7D7jkPNTGX0I7o283KBkTt8gecXfLqHflGQVPhVYr2xvHBA",
+  "alg": "ES256"
+}

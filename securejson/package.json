@@ -1,0 +1,27 @@
+{
+  "name": "securejson",
+  "version": "0.1.0",
+  "description": "CLI tool for signing and verifying SecureJSON files",
+  "bin": {
+    "securejson": "./bin/cli.ts"
+  },
+  "scripts": {
+    "dev": "node --loader ts-node/esm bin/cli.ts",
+    "build": "tsc",
+    "start": "node dist/bin/cli.js",
+    "test": "node --loader ts-node/esm bin/cli.ts"
+  },
+  "keywords": ["json", "signature", "jws", "web3", "security"],
+  "author": "Hope3 Labs",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "commander": "^14.0.1",
+    "jose": "^6.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.7.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
+}

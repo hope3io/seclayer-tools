@@ -1,0 +1,17 @@
+{
+  "payload": {
+    "name": "Kickass MintPack",
+    "description": "A collection of rare trading cards",
+    "cards": [
+      "wood-rc",
+      "soto-ssp",
+      "elinfire-foil"
+    ],
+    "rarity": "legendary",
+    "mint_count": 100,
+    "creator": "sean",
+    "collection": "seclayer-demo"
+  },
+  "signature": "eyJhbGciOiJFUzI1NiJ9.eyJwYXlsb2FkIjoie1wiY2FyZHNcIjpbXCJ3b29kLXJjXCIsXCJzb3RvLXNzcFwiLFwiZWxpbmZpcmUtZm9pbFwiXSxcImNvbGxlY3Rpb25cIjpcInNlY2xheWVyLWRlbW9cIixcImNyZWF0b3JcIjpcInNlYW5cIixcImRlc2NyaXB0aW9uXCI6XCJBIGNvbGxlY3Rpb24gb2YgcmFyZSB0cmFkaW5nIGNhcmRzXCIsXCJtaW50X2NvdW50XCI6MTAwLFwibmFtZVwiOlwiS2lja2FzcyBNaW50UGFja1wiLFwicmFyaXR5XCI6XCJsZWdlbmRhcnlcIn0iLCJpYXQiOjE3NjAzNzY3NjgsImp0aSI6InNlY3VyZWpzb24ifQ.nvYmTqeb5dlouvx6tfgNmsKm75D3ikZBKKOmPvFqWZz3CMziYu78QbcDf4C8HuPvg9D__9QA80hjzeja476UIg",
+  "alg": "ES256"
+}
